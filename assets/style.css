@@ -1,0 +1,116 @@
+/**
+* Covid-19 live update css
+*/
+
+.iedcr_data_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    color:#333;
+    font-family: sans-serif;
+}
+.iedcr_data_wrapper h2 {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    background: #eee;
+}
+.iedcr_item {
+    border: 2px solid #eee;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+}
+.iedcr_data_wrapper .counter {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    background: #eee;
+    color:#333;
+}
+.iedcr_item p {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.iedcr_item p sub {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.iedcr_data_wrapper.widget_area .iedcr_item {
+    flex: 1 1 calc(50% - 10px);
+    text-align: left;
+}
+.iedcr_data_wrapper.widget_area .counter {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    border:none;
+}
+.iedcr_data_wrapper.widget_area .iedcr_item p {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.iedcr_data_wrapper.widget_area h2 {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.death_cases.iedcr_item {
+    background: #DD5246;
+    color: #fff;
+    margin-bottom: 5px !important;
+}
+
+.death_cases.iedcr_item .counter {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    border: none;
+    background: rgba(0,0,0,0.05);
+    color: #fff;
+}
+.recovered_cases.iedcr_item {
+    background: #1DBF73;
+    color: #fff;
+}
+.recovered_cases.iedcr_item .counter {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    border: none;
+    background: rgba(0,0,0,0.05);
+    color: #fff;
+}
+
+@media only screen and (max-width:767px){
+    .iedcr_item {
+        flex: 1 1 calc(50% - 10px);
+    }
+    
+}
+
+@media only screen and (min-width:768px){
+    .iedcr_item {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}
